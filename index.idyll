@@ -44,6 +44,10 @@
           [/a]
         [/div]
       [/div]
+
+      [div className:"information"]
+        Information
+      [/div]
     [/div]
 
     [div className:"right"]

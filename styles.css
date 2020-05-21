@@ -40,6 +40,13 @@
   line-height: 3.5rem;
 }
 
+.information {
+  font-family: Graphik;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
 .article-link-container a {
   color: black;
 }
