@@ -12,8 +12,8 @@
     "layout": "none",
     "theme": "none",
     "components": [
-      "./components",
-      "./node_modules/parametric-components/dist/cjs/issue-02"
+      "./node_modules/parametric-components/dist/cjs/issue-02",
+      "./components"
     ]
   },
   "dependencies": {
