@@ -1,0 +1,57 @@
+
+
+
+.cover-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.left {
+  background: #ADADAD;
+  width: 720px;
+  height: 100vh;
+  position: absolute;
+  padding: 12rem  3rem 0 3rem;
+}
+
+.right {
+  background: #D8FFA2;
+  width: calc(100vw - 720px);
+  height: 100vh;
+  position: absolute;
+  left: 720px;;
+}
+
+
+.parametric-article-nav {
+  position: fixed;
+  width: calc(100% - 100px);
+  left: 0;
+}
+
+.article-link-container {
+  display: inline;
+}
+
+.article-titles {
+  font-family: Graphik;
+  font-size: 2.25rem;
+  line-height: 3.5rem;
+}
+
+.information {
+  font-family: Graphik;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+.article-link-container a {
+  color: black;
+}
+.article-link-container a .idyll-display {
+  font-family: Graphik;
+}
