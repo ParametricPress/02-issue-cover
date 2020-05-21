@@ -10,8 +10,8 @@
     "css": "styles.css",
     "authorView": false,
     "template": "_index.html",
-    "layout": "none",
-    "theme": "none",
+    "layout": "node_modules/parametric-styles/issue-02-layout",
+    "theme": "node_modules/parametric-styles/issue-02-theme",
     "components": [
       "./node_modules/parametric-components/dist/cjs/issue-02",
       "./components"
