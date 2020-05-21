@@ -1,6 +1,6 @@
-# Article Title
+# Issue 02 Cover
 
-TK short description of article.
+Design by Andrew Sass
 
 ## Local Setup
 
