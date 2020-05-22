@@ -1872,13 +1872,13 @@ a {
 }
 
 .article-titles {
-  font-family: Graphik;
+  font-family: 'Graphik Web';
   font-size: 2.25rem;
   line-height: 3.5rem;
 }
 
 .information {
-  font-family: Graphik;
+  font-family: 'Graphik Web';
   font-size: 1.5rem;
   line-height: 3rem;
   margin-top: 3rem;
@@ -1888,5 +1888,5 @@ a {
   color: black;
 }
 .article-link-container a .idyll-display {
-  font-family: Graphik;
+  font-family: 'Graphik Web';
 }
