@@ -1890,3 +1890,25 @@ a {
 .article-link-container a .idyll-display {
   font-family: 'Graphik Web';
 }
+
+.article-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.article-visual img {
+  width: 300px;
+}
+
+.divider  {
+  padding: 0 0.5em;
+  /* display: inline-block; */
+}
+
+
+
+.divider::after  {
+  /* content: " * "; */
+}
