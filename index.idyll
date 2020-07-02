@@ -6,6 +6,8 @@
 [var name:"parametricSlug" value:"tk-article-slug" /]
 [data name:"articles" source:"articles.json" /]
 
+[var name:"selectedArticle" value:"corporations" /]
+
 [Nav fullWidth:true /]
 
 [FullWidth]
@@ -14,31 +16,31 @@
     [div className:"left"]
 
       [div className:"article-titles" ]
-        [div className:"article-link-container"]
+        [div className:"article-link-container" onMouseEnter:`selectedArticle = articles[0].slug` ]
           [a href:`"./" + articles[0].slug + "/"`]
             [Display value:`articles[0].title` /]
           [/a]
         [/div]
-         /
-        [div className:"article-link-container"]
+         [div className:"divider" /]
+        [div className:"article-link-container" onMouseEnter:`selectedArticle = articles[1].slug` ]
           [a href:`"./" + articles[1].slug + "/"`]
             [Display value:`articles[1].title` /]
           [/a]
         [/div]
-        /
-        [div className:"article-link-container"]
+        [div className:"divider" /]
+        [div className:"article-link-container" onMouseEnter:`selectedArticle = articles[2].slug` ]
           [a href:`"./" + articles[2].slug + "/"`]
             [Display value:`articles[2].title` /]
           [/a]
         [/div]
-        /
-        [div className:"article-link-container"]
+        [div className:"divider" /]
+        [div className:"article-link-container" onMouseEnter:`selectedArticle = articles[3].slug` ]
           [a href:`"./" + articles[3].slug + "/"`]
             [Display value:`articles[3].title` /]
           [/a]
         [/div]
-        /
-        [div className:"article-link-container"]
+        [div className:"divider" /]
+        [div className:"article-link-container" onMouseEnter:`selectedArticle = articles[4].slug` ]
           [a href:`"./" + articles[4].slug + "/"`]
             [Display value:`articles[4].title` /]
           [/a]
@@ -51,6 +53,11 @@
     [/div]
 
     [div className:"right"]
+      [div className:"article-visual-container"]
+        [div className:"article-visual"]
+          [img src:`'static/images/' + selectedArticle + '.png'` /]
+        [/div]
+      [/div]
     [/div]
 
   [/div]
