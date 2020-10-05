@@ -2055,6 +2055,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  overflow: auto;
 }
 
 .left {
@@ -2067,6 +2068,7 @@ body {
   border-right: solid 1px #222222;
 }
 
+
 .right {
   background: #D8FFA2;
   color: #ffffff;
@@ -2075,6 +2077,19 @@ body {
   position: absolute;
   left: 720px;
 }
+
+
+@media all and (max-width: 720px) {
+  .left, .right {
+    width: 100vw;
+    /* overflow: ; */
+  }
+  .right {
+    left: 0;
+    top: 100vh;
+  }
+}
+
 
 .description-text {
   max-width: 500px;
