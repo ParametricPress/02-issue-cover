@@ -1,9 +1,5 @@
 const React = require('react');
 const D3Component = require('idyll-d3-component');
-const d3 = require('d3');
-
-const sizeX = 600;
-const sizeY = 400;
 
 class CustomD3Component extends D3Component {
   initialize(node, props) {
@@ -14,7 +10,7 @@ class CustomD3Component extends D3Component {
         selectedIndex: selectedIndex,
         selectedArticle: this._props.articles[selectedIndex].slug
       })
-    }, 2000);
+    }, 2500);
   }
 
   update(props, oldProps) {
@@ -31,7 +27,7 @@ class CustomD3Component extends D3Component {
             selectedIndex: selectedIndex,
             selectedArticle: this._props.articles[selectedIndex].slug
           })
-        }, 2000);
+        }, 2500);
       }, 7000)
 
     }
