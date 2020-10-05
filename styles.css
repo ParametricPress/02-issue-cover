@@ -12,48 +12,102 @@
   width: 720px;
   height: 100vh;
   position: absolute;
-  padding: 12rem  3rem 0 3rem;
+  padding: 8rem  3rem 0 3rem;
+  overflow: auto;
+  border-right: solid 1px #222222;
 }
 
 .right {
   background: #D8FFA2;
+  color: #ffffff;
   width: calc(100vw - 720px);
   height: 100vh;
   position: absolute;
-  left: 720px;;
+  left: 720px;
 }
 
+.description-text {
+  max-width: 500px;
+  margin-top: 1em;
+  font-family: 'Editorial New';
+  color: #222222;
+  /* color: #222222; */
+  transition: color 0.75s;
+}
+
+.description-text:hover,
+.description-text a {
+  color: #222222;
+}
+
+.description-text .idyll-display {
+  font-family: 'Graphik Web';
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 0.5em;
+  line-height: 1.2;
+  display: block;
+}
+
+.article-authors {
+  font-size: 22px;
+  font-weight: lighter;
+  text-decoration: none;
+  font-family: 'Graphik Web';
+}
+
+.article-authors .idyll-display {
+  font-family: 'Graphik Web';
+}
+.article-authors:hover {
+  text-decoration: none;
+}
+
+.idyll-display {
+  font-family: 'Editorial New';
+}
 
 .parametric-article-nav {
   position: fixed;
-  width: calc(100% - 100px);
+  width: 100%;
   left: 0;
+}
+.parametric-article-nav {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 50px;
 }
 
 .article-link-container {
-  display: inline;
+  display: inline-block;
+  margin-bottom: 1em;
 }
 
 .article-titles {
-  font-family: 'Graphik Web';
+  font-family: 'Editorial New';
   font-size: 2.25rem;
-  line-height: 3.5rem;
+  /* line-height: 3.5rem; */
+  line-height: 1.2;
 }
 
 .information {
   font-family: 'Graphik Web';
   font-size: 1.5rem;
   line-height: 3rem;
-  margin-top: 3rem;
 }
 
 .article-link-container a {
   color: black;
 }
 .article-link-container a .idyll-display {
-  font-family: 'Graphik Web';
+  font-family: 'Editorial New';
 }
 
+.selected.article-link-container  a .idyll-display  {
+  font-family: 'Graphik Web';
+  font-weight: bold;
+  text-decoration: underline;
+}
 .article-visual {
   display: flex;
   flex-direction: column;
@@ -62,7 +116,9 @@
   height: 100vh;
 }
 .article-visual img {
-  width: 300px;
+  width: 100%;
+  max-height: 50vh;
+  max-width: 80%;
 }
 
 .divider  {
