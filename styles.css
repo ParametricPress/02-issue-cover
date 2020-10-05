@@ -31,7 +31,9 @@
 
 @media all and (max-width: 720px) {
   .left, .right {
-    width: 100vw;
+    width: 100%;
+    height: auto;
+    position: static;
     /* overflow: ; */
   }
   .right {
@@ -43,7 +45,7 @@
 
 .description-text {
   max-width: 500px;
-  margin-top: 1em;
+  margin: 1em auto;
   font-family: 'Editorial New';
   color: #222222;
   /* color: #222222; */

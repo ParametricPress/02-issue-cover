@@ -8,8 +8,11 @@
 
 [var name:"selectedArticle" value:"corporations" /]
 [var name:"selectedArticleIndex" value:0 /]
+[var name:"cancelTimeout" value:false /]
 
 [Nav fullWidth:true /]
+
+[SelectionCycle selectedIndex:selectedArticleIndex selectedArticle:selectedArticle articles:articles cancelTimeout:cancelTimeout /]
 
 [FullWidth]
   [div className:"cover-container"]
@@ -17,7 +20,7 @@
     [div className:"left"]
 
       [div className:"article-titles" ]
-        [div className:`"article-link-container" + (selectedArticleIndex === 0 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[0].slug; selectedArticleIndex = 0` ]
+        [div className:`"article-link-container" + (selectedArticleIndex === 0 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[0].slug; selectedArticleIndex = 0; cancelTimeout = true; ` ]
           [a href:`"./" + articles[0].slug + "/"`]
             [Display value:`articles[0].title` /]
           [/a]
@@ -26,7 +29,7 @@
           [/div]
         [/div]
          [div className:"divider" /]
-        [div className:`"article-link-container" + (selectedArticleIndex === 1 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[1].slug; selectedArticleIndex = 1` ]
+        [div className:`"article-link-container" + (selectedArticleIndex === 1 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[1].slug; selectedArticleIndex = 1; cancelTimeout = true; ` ]
           [a href:`"./" + articles[1].slug + "/"`]
             [Display value:`articles[1].title` /]
           [/a]
@@ -35,7 +38,7 @@
           [/div]
         [/div]
         [div className:"divider" /]
-        [div className:`"article-link-container" + (selectedArticleIndex === 2 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[2].slug; selectedArticleIndex = 2` ]
+        [div className:`"article-link-container" + (selectedArticleIndex === 2 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[2].slug; selectedArticleIndex = 2; cancelTimeout = true; ` ]
           [a href:`"./" + articles[2].slug + "/"`]
             [Display value:`articles[2].title` /]
           [/a]
@@ -44,7 +47,7 @@
           [/div]
         [/div]
         [div className:"divider" /]
-        [div className:`"article-link-container" + (selectedArticleIndex === 3 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[3].slug; selectedArticleIndex = 3` ]
+        [div className:`"article-link-container" + (selectedArticleIndex === 3 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[3].slug; selectedArticleIndex = 3; cancelTimeout = true; ` ]
           [a href:`"./" + articles[3].slug + "/"`]
             [Display value:`articles[3].title` /]
           [/a]
@@ -53,7 +56,7 @@
           [/div]
         [/div]
         [div className:"divider" /]
-        [div className:`"article-link-container" + (selectedArticleIndex === 4 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[4].slug; selectedArticleIndex = 4` ]
+        [div className:`"article-link-container" + (selectedArticleIndex === 4 ? ' selected' : '') ` onMouseEnter:`selectedArticle = articles[4].slug; selectedArticleIndex = 4; cancelTimeout = true; ` ]
           [a href:`"./" + articles[4].slug + "/"`]
             [Display value:`articles[4].title` /]
           [/a]
