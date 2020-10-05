@@ -1,6 +1,8 @@
 const React = require('react');
 const D3Component = require('idyll-d3-component');
 
+const CYCLE_SPEED = 1750;
+
 class CustomD3Component extends D3Component {
   initialize(node, props) {
     this._props = props;
@@ -10,7 +12,7 @@ class CustomD3Component extends D3Component {
         selectedIndex: selectedIndex,
         selectedArticle: this._props.articles[selectedIndex].slug
       })
-    }, 2500);
+    }, CYCLE_SPEED);
   }
 
   update(props, oldProps) {
@@ -27,7 +29,7 @@ class CustomD3Component extends D3Component {
             selectedIndex: selectedIndex,
             selectedArticle: this._props.articles[selectedIndex].slug
           })
-        }, 2500);
+        }, CYCLE_SPEED);
       }, 7000)
 
     }
