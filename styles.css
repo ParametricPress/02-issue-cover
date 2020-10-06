@@ -37,6 +37,7 @@
     /* overflow: ; */
   }
   .right {
+    display: none;
     left: 0;
     top: 100vh;
   }
@@ -112,9 +113,16 @@
   font-size: 1.5rem;
   line-height: 3rem;
 }
+.information a {
+  color: #222222;
+  text-decoration: none;
+}
+.information a:hover {
+  text-decoration: underline;
+}
 
 .article-link-container a {
-  color: black;
+  color: #222222;
 }
 .article-link-container a .idyll-display {
   font-family: 'Editorial New';
@@ -125,6 +133,12 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+.article-titles .selected {
+  font-size: 1.85rem;
+}
+
+
 .article-visual {
   display: flex;
   flex-direction: column;

@@ -67,7 +67,7 @@
       [/div]
 
       [div className:"information"]
-        Information
+        [a href:"/about"]Information[/a]
       [/div]
     [/div]
 
@@ -75,7 +75,7 @@
       [div className:"article-visual-container"]
         [div className:"article-visual"]
           [a href:`"./" + articles[selectedArticleIndex].slug + "/" `]
-            [img src:`'static/images/' + selectedArticle + '.png'` /]
+            [img src:`'static/images/' + articles[selectedArticleIndex].image` /]
             [div className:"description-text"]
                 [Display value:`articles[selectedArticleIndex].description ` /]
             [/div]
