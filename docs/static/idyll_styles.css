@@ -2122,6 +2122,10 @@ body {
   font-family: 'Graphik Web';
 }
 
+.selected .article-authors {
+  font-size: 18px;
+}
+
 .article-authors .idyll-display {
   font-family: 'Graphik Web';
 }
