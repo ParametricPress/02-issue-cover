@@ -14,6 +14,8 @@
 
 [SelectionCycle selectedIndex:selectedArticleIndex selectedArticle:selectedArticle articles:articles cancelTimeout:cancelTimeout /]
 
+[Preload image:`articles.map((a) => 'static/images/' + articles[selectedArticleIndex].image)` /]
+
 [FullWidth]
   [div className:"cover-container"]
 

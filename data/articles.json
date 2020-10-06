@@ -7,6 +7,13 @@
     "image": "carbon-history.png",
     "description": "Why we're living through an extraordinary time."
   }, {
+    "title": "The Hidden Cost of Digital Consumption",
+    "titleBreaks": ["The Hidden Cost of Digital Consumption"],
+    "author": "Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang",
+    "slug": "streaming",
+    "image": "streaming.png",
+    "description": "Digital doesn't mean green."
+  }, {
     "title": "Algae: The Tiny CO₂ Killer",
     "titleBreaks": ["Algae: The Tiny CO₂ Killer"],
     "author": "Benjamin Cooley",
@@ -20,13 +27,6 @@
     "slug": "sinking-delta",
     "image": "sinking-delta.png",
     "description": " Things are out of joint in the delta of the Mekong, Southeast Asia’s largest river. "
-  }, {
-    "title": "The Hidden Cost of Digital Consumption",
-    "titleBreaks": ["The Hidden Cost of Digital Consumption"],
-    "author": "Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang",
-    "slug": "streaming",
-    "image": "streaming.png",
-    "description": "Digital doesn't mean green."
   }, {
     "title": "20 Companies Driving Climate Change",
     "titleBreaks": ["20 Companies", "Driving Climate Change"],
