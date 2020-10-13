@@ -29,19 +29,6 @@
 }
 
 
-@media all and (max-width: 720px) {
-  .left, .right {
-    width: 100%;
-    height: auto;
-    position: static;
-    /* overflow: ; */
-  }
-  .right {
-    display: none;
-    left: 0;
-    top: 100vh;
-  }
-}
 
 
 .description-text {
@@ -75,7 +62,7 @@
 }
 
 .selected .article-authors {
-  font-size: 18px;
+  font-size: 18jpx;
 }
 
 .article-authors .idyll-display {
@@ -91,8 +78,14 @@
 
 .parametric-article-nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  right: 0;
 }
 .parametric-article-nav {
   font-size: 16px;
@@ -165,4 +158,37 @@
 
 .divider::after  {
   /* content: " * "; */
+}
+
+
+@media all and (max-width: 1200px) {
+  .left, .right {
+    width: 600px;
+  }
+  .right {
+    width: calc(100vw - 600px);
+    left: 600px;
+  }
+
+  .description-text .idyll-display {
+    font-size: 22px;
+  }
+
+  .article-titles {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .left, .right {
+    width: 100%;
+    height: auto;
+    position: static;
+    /* overflow: ; */
+  }
+  .right {
+    display: none;
+    left: 0;
+    top: 100vh;
+  }
 }
