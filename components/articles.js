@@ -5,6 +5,12 @@ const ARTICLES = [
     author: 'Aatish Bhatia',
     slug: 'carbon-history',
     description: 'TK',
+  },  {
+    title: 'The 20 Companies Driving Climate Change',
+    titleBreaks: ['The 20 Companies Driving Climate Change'],
+    author: 'Geoffrey Litt, Seth Thompson',
+    slug: 'corporate-cause',
+    description: 'TK'
   }, {
     title: 'Algae: The Tiny CO2 killer',
     titleBreaks: ['Algae: The Tiny CO2 killer?'],
@@ -23,12 +29,6 @@ const ARTICLES = [
     author: 'Halden Lin, Aishwarya Nirmal, Hathi Shobhit, Lilian Liang',
     slug: 'environmental-impact-streaming',
     description: 'TK',
-  }, {
-    title: 'The 20 Companies Driving Climate Change',
-    titleBreaks: ['The 20 Companies Driving Climate Change'],
-    author: 'Geoffrey Litt, Seth Thompson',
-    slug: 'corporate-cause',
-    description: 'TK'
   }]
 
 module.exports = ARTICLES;
