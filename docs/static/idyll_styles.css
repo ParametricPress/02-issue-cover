@@ -2061,7 +2061,7 @@ body {
   width: 720px;
   height: 100vh;
   position: absolute;
-  padding: 8rem 3rem 0 3rem;
+  padding: 5rem 3rem 0 3rem;
   overflow: auto;
   border-right: solid 1px #D8FFA2;
 }
@@ -2099,7 +2099,7 @@ body {
 }
 
 .article-authors {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: lighter;
   text-decoration: none;
   font-family: 'Graphik Web';
@@ -2143,15 +2143,15 @@ body {
 
 .article-titles {
   font-family: 'Editorial New';
-  font-size: 2.25rem;
+  font-size: 1.85rem;
   /* line-height: 3.5rem; */
   line-height: 1.2;
 }
 
 .information {
   font-family: 'Graphik Web';
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
 }
 
 .information a {
@@ -2196,6 +2196,7 @@ body {
 
 hr {
   border-top: 1px solid #ADADAD;
+  margin: 1.5em 0;
 }
 
 /* enable green hover on selected on non-mobile screens */
@@ -2205,7 +2206,7 @@ hr {
     font-family: 'Graphik Web';
     font-weight: bold;
     text-decoration: underline;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #D8FFA2;
   }
   .article-titles .selected {
@@ -2229,7 +2230,7 @@ hr {
     font-size: 22px;
   }
   .article-titles {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -2239,6 +2240,7 @@ hr {
     height: auto;
     position: static;
     /* overflow: ; */
+    border-right: none;
   }
   .right {
     display: none;
