@@ -30,7 +30,7 @@ class Nav extends React.PureComponent {
     return (
       <div className="parametric-article-nav">
           <div>
-            <div style={{fontFamily:'Graphik Web', textDecoration: 'none'}}>Parametric Press</div>
+          <div style={{ fontFamily: 'Graphik Web', textDecoration: 'none', color: "#ADADAD"}}>Parametric Press</div>
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',

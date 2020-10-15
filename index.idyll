@@ -68,8 +68,14 @@
         [/div]
       [/div]
 
+      [hr /]
+
       [div className:"information"]
-        [a href:"/about"]Information[/a]
+        [a href:"/about"]Editor's Note[/a]
+      [/div]
+
+      [div className:"information"]
+        [a href:"/about"]About Parametric Press[/a]
       [/div]
     [/div]
 
