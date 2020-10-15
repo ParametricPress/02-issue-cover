@@ -71,7 +71,7 @@
       [hr /]
 
       [div className:"information"]
-        [a href:"/about"]Editor's Note[/a]
+        [a href:"/editors-note"]Editors' Note[/a]
       [/div]
 
       [div className:"information"]
