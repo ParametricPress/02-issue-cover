@@ -2099,6 +2099,10 @@ body {
   z-index: 2;
 }
 
+.right a {
+  text-decoration: none;
+}
+
 .description-text {
   max-width: 600px;
   margin: 1em auto;
