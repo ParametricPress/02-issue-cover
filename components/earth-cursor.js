@@ -14,8 +14,6 @@ class EarthCursor extends React.PureComponent {
     super(props);
 
     this.state = {
-      x: 0,
-      y: 0,
       isTouchDevice: true,
       currentGlobe: '🌍',
       initialized: false
@@ -48,7 +46,7 @@ class EarthCursor extends React.PureComponent {
 
   render() {
     const { isTouchDevice, x, y, currentGlobe, initialized } = this.state;
-    if (!initialized) {
+    if (!initialized || (!isTouchDevice && (!x || !y))) {
       return null;
     }
     return (
