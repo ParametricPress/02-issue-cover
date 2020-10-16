@@ -14,7 +14,9 @@
 
 // [SelectionCycle selectedIndex:selectedArticleIndex selectedArticle:selectedArticle articles:articles cancelTimeout:cancelTimeout /]
 
-[Preload image:`articles.map((a) => 'static/images/' + articles[selectedArticleIndex].image)` /]
+[Preload images:`articles.map((a) => 'static/images/' + articles[selectedArticleIndex].image)` /]
+
+[EarthCursor fullWidth:true /]
 
 [FullWidth]
   [div className:"cover-container"]
