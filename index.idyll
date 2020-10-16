@@ -70,12 +70,14 @@
 
       [hr /]
 
-      [div className:"information"]
-        [a href:"/editors-note"]Editors' Note[/a]
-      [/div]
+      [div className:"information-container"]
+        [div className:"information"]
+          [a href:"./editors-note"]Editors' Note[/a]
+        [/div]
 
-      [div className:"information"]
-        [a href:"/about"]About Parametric Press[/a]
+        [div className:"information"]
+          [a href:"/about"]About Us[/a]
+        [/div]
       [/div]
     [/div]
 
