@@ -41,7 +41,11 @@ class EarthCursor extends React.PureComponent {
       window.addEventListener("mousemove", handleMouseMove);
     }
 
-    this.setState({initialized: true});
+    this.setState({
+      initialized: true,
+      x: +window.innerWidth,
+      y: +window.innerHeight
+    });
   }
 
   render() {
@@ -54,8 +58,8 @@ class EarthCursor extends React.PureComponent {
         position: 'fixed',
         left: isTouchDevice ? null : x + 20,
         top: isTouchDevice ? null : y + 40,
-        right: isTouchDevice ? null : '1em',
-        bottom: isTouchDevice ? null : '1em',
+        right: isTouchDevice ? '1em': null,
+        bottom: isTouchDevice ? '1em' : null,
         fontSize: 64,
         zIndex: 1000000
       }}>
