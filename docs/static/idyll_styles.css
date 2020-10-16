@@ -2056,6 +2056,29 @@ body {
   background: #222222;
 }
 
+
+.parametric-article-nav {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  right: 0;
+  background-color: #222222;
+  /* border-bottom: solid 1px #D8FFA2; */
+  color: #D8FFA2;
+  /* border: none; */
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 50px;
+}
+
+.parametric-article-nav {
+  max-width: 700px;
+}
 .left {
   background: #222222;
   width: 720px;
@@ -2063,7 +2086,6 @@ body {
   position: absolute;
   padding: 5rem 3rem 0 3rem;
   overflow: auto;
-  border-right: solid 1px #D8FFA2;
 }
 
 .right {
@@ -2073,6 +2095,8 @@ body {
   height: 100vh;
   position: absolute;
   left: 720px;
+  top: 0;
+  z-index: 2;
 }
 
 .description-text {
@@ -2117,25 +2141,6 @@ body {
 .idyll-display {
   font-family: 'Editorial New';
 }
-
-.parametric-article-nav {
-  position: fixed;
-  width: 100vw;
-  left: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  max-width: none;
-  right: 0;
-  background-color: #222222;
-  border-bottom: solid 1px #D8FFA2;
-  /* border: none; */
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 50px;
-}
-
 .article-link-container {
   display: inline-block;
   margin-top: 1em;
@@ -2146,6 +2151,11 @@ body {
   font-size: 1.85rem;
   /* line-height: 3.5rem; */
   line-height: 1.2;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .information {
@@ -2180,7 +2190,7 @@ body {
 }
 
 .article-visual img {
-  width: 100%;
+  width: auto;
   max-height: 50vh;
   max-width: 80%;
 }
@@ -2199,6 +2209,10 @@ hr {
   margin: 1.5em 0;
 }
 
+/* .selected .article-authors {
+  font-size: 18px;
+  color: #cccccc;
+} */
 /* enable green hover on selected on non-mobile screens */
 
 @media all and (min-width: 800px) {
@@ -2207,20 +2221,23 @@ hr {
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.6rem;
-    color: #D8FFA2;
+    color: #eeeeee;
   }
   .article-titles .selected {
     font-size: 1.85rem;
   }
   .selected .article-authors {
-    /* font-size: 18px; */
-    color: #D8FFA2;
+    font-size: 18px;
+    color: #eeeeee;
   }
 }
 
 @media all and (max-width: 1200px) {
   .left, .right {
     width: 600px;
+  }
+  .parametric-article-nav {
+    max-width: 600px;
   }
   .right {
     width: calc(100vw - 600px);
@@ -2241,6 +2258,9 @@ hr {
     position: static;
     /* overflow: ; */
     border-right: none;
+  }
+  .parametric-article-nav {
+    max-width: 100%;
   }
   .right {
     display: none;
