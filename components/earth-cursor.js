@@ -58,8 +58,8 @@ class EarthCursor extends React.PureComponent {
         position: 'fixed',
         left: isTouchDevice ? null : x + 20,
         top: isTouchDevice ? null : y + 40,
-        right: isTouchDevice ? '1em': null,
-        bottom: isTouchDevice ? '1em' : null,
+        right: isTouchDevice ? '18px': null,
+        bottom: isTouchDevice ? '24px' : null,
         fontSize: 64,
         zIndex: 1000000
       }}>

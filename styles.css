@@ -215,6 +215,13 @@ hr {
     /* overflow: ; */
     border-right: none;
   }
+
+  .left {
+    padding: 5rem 1em 0 1em;
+  }
+  .parametric-article-nav {
+    padding-left: 1em;
+  }
   .parametric-article-nav {
     max-width: 100%;
   }
