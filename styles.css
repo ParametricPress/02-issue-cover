@@ -234,4 +234,8 @@ hr {
     left: 0;
     top: 100vh;
   }
+
+  .information-container {
+    margin-bottom: 100px;
+  }
 }
