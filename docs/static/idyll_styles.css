@@ -2185,6 +2185,10 @@ body {
   font-family: 'Editorial New';
 }
 
+.parametric-nav-links a:first-of-type {
+  text-decoration: underline;
+}
+
 .article-visual {
   display: flex;
   flex-direction: column;
@@ -2262,6 +2266,13 @@ hr {
     position: static;
     /* overflow: ; */
     border-right: none;
+  }
+
+  .left {
+    padding: 5rem 1em 0 1em;
+  }
+  .parametric-article-nav {
+    padding-left: 1em;
   }
   .parametric-article-nav {
     max-width: 100%;
