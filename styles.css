@@ -137,6 +137,10 @@
   font-family: 'Editorial New';
 }
 
+.parametric-nav-links a:first-of-type {
+  text-decoration: underline;
+}
+
 .article-visual {
   display: flex;
   flex-direction: column;
