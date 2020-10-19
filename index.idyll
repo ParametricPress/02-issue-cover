@@ -1,9 +1,9 @@
 [meta title:"The Climate Issue" description:"The Parametric Press returns"
-  shareImageUrl:"https://parametric.press/issue-02/tk-article-slug/static/images/share.png"
-  shareImageWidth:"880"
-  shareImageHeight:"440" /]
+  shareImageUrl:"https://parametric.press/issue-02/static/images/share.png"
+  shareImageWidth:"1000"
+  shareImageHeight:"500" /]
 
-[var name:"parametricSlug" value:"tk-article-slug" /]
+[var name:"parametricSlug" value:"02-issue-cover" /]
 [data name:"articles" source:"articles.json" /]
 
 [var name:"selectedArticle" value:"corporations" /]
@@ -102,4 +102,4 @@
 
 
 // Uncomment before pub
-// [Analytics google:"UA-139053456-1" tag:parametricSlug /]
+[Analytics google:"UA-139053456-1" tag:parametricSlug /]
