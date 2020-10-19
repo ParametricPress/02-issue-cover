@@ -1,7 +1,7 @@
 [meta title:"The Climate Issue" description:"The Parametric Press returns"
   shareImageUrl:"https://parametric.press/issue-02/static/images/share.png"
-  shareImageWidth:"1000"
-  shareImageHeight:"500" /]
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
 
 [var name:"parametricSlug" value:"02-issue-cover" /]
 [data name:"articles" source:"articles.json" /]
