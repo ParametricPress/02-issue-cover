@@ -6,6 +6,9 @@ const CYCLE_SPEED = 1750;
 class CustomD3Component extends D3Component {
   initialize(node, props) {
     this._props = props;
+    if (matchMedia('(hover: none)').matches) {
+      return;
+    }
     this.timeout = setInterval(() => {
       const selectedIndex = (this._props.selectedIndex + 1) % this._props.articles.length;
       this.props.updateProps({
@@ -30,7 +33,7 @@ class CustomD3Component extends D3Component {
             selectedArticle: this._props.articles[selectedIndex].slug
           })
         }, CYCLE_SPEED);
-      }, 7000)
+      }, 3500)
 
     }
   }

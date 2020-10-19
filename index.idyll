@@ -12,7 +12,7 @@
 
 [Nav fullWidth:true /]
 
-// [SelectionCycle selectedIndex:selectedArticleIndex selectedArticle:selectedArticle articles:articles cancelTimeout:cancelTimeout /]
+[SelectionCycle selectedIndex:selectedArticleIndex selectedArticle:selectedArticle articles:articles cancelTimeout:cancelTimeout /]
 
 [Preload images:`articles.map((a) => 'static/images/' + articles[selectedArticleIndex].image)` /]
 
